@@ -10,7 +10,20 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello World")
+        Button(action: {}) {
+        HStack {
+             Image(systemName: "star")
+                .font(.title)
+             Text("Favori")
+                .font(.title)
+         }
+         .frame(minWidth: 0, maxWidth: .infinity)
+         .padding()
+         .foregroundColor(.black)
+         .background(Color.yellow)
+         .cornerRadius(60)
+         .shadow(radius: 5.0)
+        }
     }
 }
 
